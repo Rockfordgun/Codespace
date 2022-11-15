@@ -1,0 +1,36 @@
+.form-challenge {
+    margin-left: 10px;
+}
+
+label {
+
+        display: inline-block;
+        width: 100px;
+        text-align: left;
+}
+
+.button {
+
+    margin-left: 10%;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+
+
+}
+
+li {
+    color: aqua;
+ 
+    
+    padding: 20px;
+}
+
+
+a {
+    text-decoration: none;
+}

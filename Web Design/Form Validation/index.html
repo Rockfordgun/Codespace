@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul>
+
+        <li ><a href="index.html">Codespace Form</a></li>
+        <li><a href="myform.html">My Form | CLICK HERE</a></li>
+  
+    </ul>
+
+    <h1>Form Validation</h1>
+
+
+    <form action="" method="get" class="form-challenge">
+ 
+        <div class="form-challenge">
+
+            <label for="userID">User id:</label>
+            <input type="text" name="userID" id="userID" required>
+            12 Characters
+        </div>
+<br> 
+<!-- Password Input -->
+        <div class="form-challenge">
+
+            <label for="userPass">Password:</label>
+            <input type="password" name="userPass" id="userPass" required>
+            12 Characters
+
+        </div>
+<br>
+        <div class="form-challenge">
+
+            <label for="userName">Name:</label>
+            <input type="text" name="userName" id="userName" required>
+
+        </div>
+<br>
+        <div class="form-challenge">
+
+            <label for="Adress">Adress:</label>
+            <input type="dropdown" name="Adress" id="Adress" required>
+
+        </div>
+<br>
+
+<!-- Dropdown Section -->
+
+        <div class="form-challenge">
+
+            <label for="country">Country:</label>
+
+            <select id="country" name="country">
+                <option value="southAfrica">South Africa</option>
+                <option value="unitedKingdom">United Kingdom</option>
+                <option value="australia">Australia</option>
+                <option value="peterpan">Never Never Land</option>
+            </select>
+
+        </div>
+<br>
+<!-- Number Input Only -->
+        <div class="form-challenge">
+
+            <label for="zipCode">ZIP Code:</label>
+            <input type="number" name="zipCode" id="zipCode" required>
+
+        </div>
+<br>
+<!-- Email Validation -->
+        <div class="form-challenge">
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+
+        </div>
+<br>
+<!-- Radio Buttons -->
+        <div class="form-challenge">
+
+
+        <label for="sex">Sex:</label> 
+        <input type="radio" name="sex" id="male" >
+   
+        <label for="male">Male:</label>
+            
+        <input type="radio" name="sex" id="female" >
+            <label for="female">Female:</label>
+  
+
+        </div>
+<br>
+<!-- Check Boxes -->
+        <div class="form-challenge">
+
+        <label for="checkbox">Language:</label> 
+        <input type="checkbox" name="english" id="english" required>
+            <label for="english">English:</label>
+    
+        <input type="checkbox" name="afrikaans" id="afrikaans" required>
+            <label for="afrikaans">Afrikaans:</label>
+
+        </div>
+<br>
+<!-- Comment Section -->
+        <div class="form-challenge">
+
+            <label for="about">About:</label>
+            <textarea rows="4" cols="50" name="about" form="form-challenge">
+                Optional</textarea>
+
+        </div>
+<br>
+
+<div class="button">
+<input type="submit" value="Submit">
+</div>
+  
+
+
+
+
+
+    </form>
+
+</body>
+</html>

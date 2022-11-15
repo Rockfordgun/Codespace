@@ -1,0 +1,306 @@
+*.{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #F4F4F4;
+}
+
+.headerParent {
+    display: flex;
+    background-color: #F4F4F4;
+    height: 5rem;
+
+}
+
+.headerChild {
+
+    background-image: url(../img/StudioLogo.png);
+    background-repeat: no-repeat;
+    margin-left: 1%;
+    margin-top: .7em;
+    width: 12%;
+    height: 5rem;
+}
+
+.headerChild2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #075982;
+    width: 85%;
+    height: 5rem;
+}
+
+
+ul {
+
+}
+
+
+
+li {
+    display: flex;
+    text-transform: uppercase;
+    display: inline-flex;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: medium;
+    justify-content: space-between;
+    padding: 10px;    
+}
+
+/* Form Section */
+
+
+#userID, #userPass, #userName, #Adress, #zipCode, #email, #about{
+    font-family: 'Lato', sans-serif;
+    padding-left: 1em;
+    font-size: 1em;
+    border: 0px;
+    color: #075982;
+    background-color: #cccccc;
+    font-weight: 400;
+    width: 40em;
+    height: 50px;
+}
+
+#country {
+    font-family: 'Lato', sans-serif;
+    padding-left: 1em;
+    font-size: 1em;
+    border: 0px;
+    color: #075982;
+    background-color: #cccccc;
+    font-weight: 400;
+    width: 41em;
+    height: 50px;
+}
+
+#comment {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: 'Lato', sans-serif;
+    padding-left: 1em;
+    font-size: 1em;
+    border: 0px;
+    color: #075982;
+    background-color: #cccccc;
+    font-weight: 400;
+    width: 40em;
+    height: 10em;
+}
+
+.button {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8em;
+    color: #075982;
+    width: 15rem;
+    height: 3rem;
+    border: 2px solid #075982;
+    font-weight: 700;
+
+}
+
+.button:hover {
+    background-color: #075982;
+    color: white;
+}
+
+.formParent {
+    background-color: #F4F4F4;
+    display: flex;
+}
+
+.formChild {
+    margin-left: 13%;
+    width: 40%;
+    width: 
+}
+
+/* Radio Button Style */
+
+#male, #female {
+
+
+    font-family: 'Lato', sans-serif;
+
+    font-weight: 400;
+    color: #075982;
+
+}
+/* Form Section END */
+
+.infoChild {
+    display:grid;
+    box-shadow: 1px 1px 1px 1px rgba(120, 120 , 120);
+    width: 50em;
+    margin-left: 2em;
+    margin-top: 4em;
+    margin-right: 13%;
+    padding: 2% 3% 0 3% ;
+    height: fit-content;
+
+}
+
+.intro {
+    display: grid;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: fit-content;
+    margin-bottom: 1%;
+}
+
+.introHeading {
+    font-family: 'Lato', sans-serif;
+    color: #075982;
+    font-weight: 900;
+    font-size: 2em;
+}
+
+.h3info{
+    font-family: 'Lato', sans-serif;
+    color: #075982;
+    font-weight: 900;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+
+.infoBox1 {
+    display: grid;
+    content: "\f3c5";
+    font-family: FontAwesome;
+    color:#075982;
+    font-size: 3em;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    width: fit-content;
+    height: fit-content;
+}
+
+.infoBox1:before {
+
+    justify-content: center;
+    content: "\f3c5";
+    font-family: FontAwesome;
+
+}
+
+.infoBox2 {
+    display: grid;
+    width: 20em;
+    margin-bottom: 20px;
+    margin-right: 25rem;
+    padding-top: 0px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding-bottom: 3%;
+
+}
+
+#text {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4em;
+    color: #075982;
+    font-weight: 900;
+    margin-bottom: 0%;
+    margin-top: 0%; 
+} 
+
+.infoBox3 {
+    display: grid;
+    content: "\f3cd";
+    font-family: FontAwesome;
+    color:#075982;
+    font-size: 3em;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    width: fit-content;
+    height: fit-content;
+}
+
+.infoBox3:before {
+
+    justify-content: center;
+    content: "\f3cd";
+    font-family: FontAwesome;
+
+}
+
+.infoBox4 {
+    display: grid;
+    content: "\f0e0";
+    font-family: FontAwesome;
+    color:#075982;
+    font-size: 3em;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    width: fit-content;
+    height: fit-content;
+}
+
+.infoBox4:before {
+
+    justify-content: center;
+    content: "\f0e0";
+    font-family: FontAwesome;
+
+}
+
+.infoBox5 {
+    display: grid;
+    content: "\f073";
+    font-family: FontAwesome;
+    color:#075982;
+    font-size: 3em;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    width: fit-content;
+    height: fit-content;
+}
+
+.infoBox5:before {
+
+    justify-content: center;
+    content: "\f073";
+    font-family: FontAwesome;
+
+}
+
+.map {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+p {
+    font-family: 'Lato', sans-serif; 
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #c3f4ff;
+}
+
+a:hover {
+    color: #86e9ff;
+}
+
+
+
+
+
+
