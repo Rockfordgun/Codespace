@@ -139,6 +139,7 @@ li {
 /* Form Section END */
 
 .infoChild {
+    border-top: 3px solid #075982;
     display:grid;
     box-shadow: 1px 1px 1px 1px rgba(120, 120 , 120);
     width: 50em;
