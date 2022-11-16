@@ -1,0 +1,102 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  display:inline
+ 
+}
+
+#logo {
+
+  border-radius: 50%;
+  border: 2px solid white;
+  width: 15rem;
+}
+
+header {
+  background-color: #404143;
+  color: white;
+  padding: 2%;
+  text-align: center;
+}
+
+menu {
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.box-1{
+  background-color: lightgray;
+  text-decoration: underline;
+  font-size: 20px;
+  width: 20%;
+  padding: 20px;
+  ;
+}
+
+#skill {
+  list-style: disc;
+  list-style-position: outside;
+}
+
+ul {
+  list-style-position: inside;
+  text-align: left;
+
+
+}
+
+li {
+  list-style: none;
+
+}
+
+.box-2 {
+  
+  width: 80%;
+  padding: 20px;
+}
+
+.footer_container {
+  background-color: #404143;
+  padding: 3%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  
+}
+
+.f_box_1 {
+  flex: 0 0 100%;
+  text-align: center;
+  color: white;
+  width: 5%;
+  
+  
+}
+
+.f_box_2 {
+  
+  width: 5%;
+  margin: 5px 5px;
+}
+
+.f_box_3 {
+  
+  width: 5%;
+  margin: 5px 5px;
+}
+
+.f_box_4 {
+  
+  width: 5%;
+  margin: 5px 5px;
+}
+
