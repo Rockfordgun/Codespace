@@ -15,8 +15,9 @@ main {
 }
 
 header {
-  background-color: #404143;
-  color: white;
+  background-image: url(./img/Bnner.jpg);
+  background-image: ;
+  color: black;
   padding: 2%;
   text-align: center;
 }
