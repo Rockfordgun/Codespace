@@ -1,0 +1,512 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+
+}
+.mainHeader {
+
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/bannerCell.jpg);
+    align-items: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 900px;
+}
+
+.menu {
+    order: 1;
+    background-color: blue;
+    position: relative;
+    width: 90%;
+    height: 5em;
+}
+
+.menu-content {
+    display: none;
+    margin-top: 3.8rem;
+    position: absolute;
+    font-size: 0.8em;
+
+    background-color: #f9f9f9;
+    min-width: 200px;
+
+    padding: 0.5em 6em;
+    z-index: 1;
+}
+
+.menu:hover .menu-content {
+    display: block;
+}
+
+.button {
+
+    display: flex;
+    padding-top: 0.6em;
+    font-size: 2rem;
+    justify-content: end;
+}
+
+.heroBanner {
+    margin-top: 50%;
+    display: flex;
+    order: 2;
+    flex-direction: column;
+
+    background-color: violet;
+    width: 90%;
+    height: fit-content;
+}
+
+.skillAnimate {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.Plight {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+/* Services CSS*/
+
+.services {
+    background-color: tomato;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.subService {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+
+    background-color: turquoise;
+    width: 90%;
+    height: 45em;
+
+}
+
+.headingService {
+    font-size: 1.5em;
+    font-weight: 900;
+    padding-top: 5%;
+}
+
+/* About Me */
+
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.myPhoto {
+    display: flex;
+    background-image: url(../img/aboutMeCell.jpg);
+    padding: 20px 20px;
+    margin: 5% 5% 5%;
+    width: 80%;
+    height: 430px;
+    background-color: blue;
+
+}
+
+.aboutHeading {
+    
+}
+
+.subAbout {
+    background-color: tomato;
+    width: 90%;
+    height: fit-content;
+}
+
+
+/*Portfolio*/
+.gal {
+	
+
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+	  
+	
+	}	
+	.gal img{ width: 100%; padding: 7px 0;}
+
+
+
+@media (max-width: 500px) {
+		
+		.gal {
+	
+	
+	-webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+	  
+	
+	}
+		
+	}
+
+    #illustrator {
+        display: none;
+        -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+	  
+	
+	}	
+	.gal img{ width: 100%; padding: 7px 0;}
+
+
+.portfolio {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.galleryMenu {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallleryMenu:hover {
+    color: blue;
+}
+
+.Pbold{
+    display: flex;
+    width: 90%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:500;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.skills {
+    background-color: aqua;
+    display: flex;
+    padding: 5% 5%;
+    flex-direction: column;
+
+}
+.Main_heading {
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.Pboldnc {
+    display: flex;
+    width: 90%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:500;
+    font-size: 1.3em;
+
+}
+
+.barWeb, .barHTML, .barCSS, .barJavas, .barIllu, .barPhotos, .barIndes, .barCorel {
+    font-size: 1.2em;
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
+.webMeter { 
+    height: 1.2em;
+    width: 25em;
+    position:static;
+    overflow: hidden;
+}
+
+.webMeter span {
+    display: block;
+    height: 100%;
+}
+
+.webProgress {
+    padding-bottom: 5% ;
+    background-color: #00BFF2;
+    animation: progressBar 3s ease-in-out;
+    animation-fill-mode:both; 
+}
+
+@keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+.htmlMeter { 
+    height: 1.2em;
+    width: 25em;
+    position:static;
+    overflow: hidden;
+}
+
+.htmlMeter span {
+    display: block;
+    height: 100%;
+}
+
+.htmlProgress {
+    padding-bottom: 5% ;
+    background-color: #28A34D;
+    animation: progressBar 3s ease-in-out;
+    animation-fill-mode:both; 
+}
+
+@keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+.designMeter { 
+    height: 1.2em;
+    width: 25em;
+    position:static;
+    overflow: hidden;
+}
+
+.designMeter span {
+    display: block;
+    height: 100%;
+}
+
+.designProgress {
+    padding-bottom: 5% ;
+    background-color: #EF9900;
+    animation: progressBar 3s ease-in-out;
+    animation-fill-mode:both; 
+}
+
+@keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+.javaMeter { 
+    height: 1.2em;
+    width: 25em;
+    position:static;
+    overflow: hidden;
+}
+
+.javaMeter span {
+    display: block;
+    height: 100%;
+}
+
+.javaProgress {
+    padding-bottom: 5% ;
+    background-color: #C94517;
+    animation: progressBar 3s ease-in-out;
+    animation-fill-mode:both; 
+}
+
+@keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+.aiMeter { 
+    height: 1.2em;
+    width: 25em;
+    position:static;
+    overflow: hidden;
+}
+
+.aiMeter span {
+    display: block;
+    height: 100%;
+}
+
+.aiProgress {
+    padding-bottom: 5% ;
+    background-color: #D800EF;
+    animation: progressBar 3s ease-in-out;
+    animation-fill-mode:both; 
+}
+
+@keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+.psMeter { 
+    height: 1.2em;
+    width: 25em;
+    position:static;
+    overflow: hidden;
+}
+
+.psMeter span {
+    display: block;
+    height: 100%;
+}
+
+.psProgress {
+    padding-bottom: 5% ;
+    background-color: #ec1e0f;
+    animation: progressBar 3s ease-in-out;
+    animation-fill-mode:both; 
+}
+
+@keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+.idMeter { 
+    height: 1.2em;
+    width: 25em;
+    position:static;
+    overflow: hidden;
+}
+
+.idMeter span {
+    display: block;
+    height: 100%;
+}
+
+.idProgress {
+    padding-bottom: 5% ;
+    background-color: #ff066e;
+    animation: progressBar 3s ease-in-out;
+    animation-fill-mode:both; 
+}
+
+@keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+.corelMeter { 
+    height: 1.2em;
+    width: 25em;
+    position:static;
+    overflow: hidden;
+}
+
+.corelMeter span {
+    display: block;
+    height: 100%;
+}
+
+.corelProgress {
+    padding-bottom: 5% ;
+    background-color: #0ac6ff;
+    animation: progressBar 3s ease-in-out;
+    animation-fill-mode:both; 
+}
+
+@keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+.cellWrapper {
+    display: flex;
+    padding: 5px 5px;
+}
+.cellIcon {
+
+    background-color: #ff0000;
+    padding: 0.5em 1.2em;
+    width: 4em;
+    height:4em;
+
+
+}
+
+.cellIcon::before {
+
+    font-family: "FontAwesome";
+
+    font-size: 2em;
+
+    color: #ffffff;
+    content: '\f3cd';
+
+}
+
+.cellWrapper {
+    display: flex;
+    
+
+
+}
+.cell {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    font-size: 1.2em;
+    padding-left: 5%;
+    width: 70%;
+}
+
+.mailWrapper {
+    display: flex;
+    padding: 5px 5px;
+}
+
+
+.mailIcon {
+
+    background-color: #ff0000;
+    padding: 0.5em 0.4em;
+    width: 4em;
+    height:4em;
+}
+
+.mailIcon::before {
+    font-family: "FontAwesome";
+    padding: 0.3em 0.3em;
+    font-size: 2em;
+    color: white;
+    content: '\f0e0';
+}
+
+.email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    font-size: 1.2em;
+    padding-left: 5%;
+    width: 70%;
+}
+
+.feedback {
+    height: fit-content;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "|";
+}
