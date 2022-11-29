@@ -8,7 +8,10 @@
 body {
     font-family: 'Open Sans', sans-serif;
 
+
 }
+
+/* Banner */
 .mainHeader {
 
     display: flex;
@@ -21,83 +24,16 @@ body {
 
 }
 
+.heroBanner {
+    margin-top: 50%;
+    display: flex;
+    order: 2;
+    flex-direction: column;
+    color: white;
 
-.sm-icons {
-    flex-direction: row;
-    padding: 2%;
-
-  }
-
-.navbar {
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-left: 10%;
-
-}
-
-
-.sociallinks {
-    padding: 2%;
-}
-
-#logon {
-    background-image: url(../img/studioLogo.png);
-    width: fit-content;
+    width: 90%;
     height: fit-content;
 }
-
-
-/*
- .skillAnimate {
-    display: inline-flex;
- }
-
-.skillAnimate .static_txt {
-    font-weight: 200;
-    font-size: 1.5em;
-    margin-right: 20px;
-}
-
-.skillAnimate .dynamic_txt{
-    font-weight: 800;
-    font-size: 1.5em;
-    line-height: 40px;
-    color: #075982;
-    padding-left: 0%;
-    height: 100px;
-    overflow: hidden;
-
-}
-
-.dynamic_txt li {
-    list-style: none;
-
-}
-
-.dynamic_txt li span{
-    position: relative;
-}
-
-
-.dynamic_txt li span::after{
-    content: "";
-    position: absolute;
-    background:#ec1e0f;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    border-left: 2px solid #075982;
-    animation: typing 1.5s steps(9) infinite;
-
-}
-
-@keyframes typing {
-    100% {
-        left: 100%;
-        margin: 0 25px 0 25px;
-    }
-}
-*/
 
 .buttonHire {
     background-color: #075982;
@@ -115,27 +51,6 @@ body {
     animation-fill-mode:both; 
 }
 
-
-.button {
-
-    display: flex;
-    padding-top: 0.6em;
-    font-size: 2rem;
-    justify-content: end;
-}
-
-.heroBanner {
-    margin-top: 50%;
-    display: flex;
-    order: 2;
-    flex-direction: column;
-    color: white;
-
-    width: 90%;
-    height: fit-content;
-}
-
-
 h2 {
     font-size: 3em;
     font-weight: 800;
@@ -147,19 +62,33 @@ h2 {
     font-weight: 300;
 }
 
-/* Services CSS*/
-/*
-#services {
-    padding-top: 20%;
-    padding-bottom: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    animation: fadeInRight 1s ease-in-out;
-    animation-fill-mode:both; 
+/*Navigation*/
 
+.sm-icons {
+    flex-direction: row;
+    padding: 2%;
+
+  }
+
+.navbar {
+    
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 10%;
+    
 }
-*/
+
+.sociallinks {
+    padding: 2%;
+}
+
+#logon {
+    background-image: url(../img/studioLogo.png);
+    width: fit-content;
+    height: fit-content;
+}
+
+/* Services */
 
 .serviceContainer {
     display: grid;
@@ -183,34 +112,18 @@ animation-fill-mode:both;
 }
 
 
-@keyframes fadeInRight{
-    0% { opacity: 0;
-  -webkit-transform: translate3d(5%,0,0);
-  transform: translate3d(5%,0,0); }
-    100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-  }
-
-.subService {
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-
-
-    width: 90%;
-    height: 45em;
-
-}
 
 .headingService {
     color: #075982;
     font-size: 1.8em;
     font-weight: 900;
     padding-top: 5%;
+
+    animation: fader 2s ease-in-out;
+    animation-fill-mode:both; 
 }
+
+/* About Me */
 
 .card {
     background-color: dodgerblue;
@@ -275,16 +188,17 @@ animation-fill-mode:both;
     animation-fill-mode:both; 
 }
 
-@keyframes fadeInUp{
-    0% { opacity: 0;
-  -webkit-transform: translate3d(0,15%,0);
-  transform: translate3d(0,15%,0); }
-    100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-  }
+
+
+  .Pbold{
+    display: flex;
+    width: 90%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:500;
+    font-size: 0.9em;
+    text-align: center;
+    
+}
 
 /*Portfolio*/
 .gal {
@@ -298,16 +212,10 @@ animation-fill-mode:both;
 	}	
 	.gal img{ width: 100%; padding: 7px 0;}
 
-
-
-
-
     .row {
         padding-left: 5%;
         padding-right: 5%;
     }
-
-
 
     
 #portfolio {
@@ -333,15 +241,7 @@ animation-fill-mode:both;
     color: blue;
 }
 
-.Pbold{
-    display: flex;
-    width: 90%;
-    font-family: 'Open Sans', sans-serif;
-    font-weight:500;
-    font-size: 0.9em;
-    text-align: center;
-    
-}
+
 
 
 /* Skills Tab*/
@@ -376,11 +276,7 @@ animation-fill-mode:both;
     font-size: 2em;
 }
 
-.headingService{
 
-animation: fader 2s ease-in-out;
-animation-fill-mode:both; 
-}
 
 .Pboldnc {
     display: flex;
@@ -392,6 +288,8 @@ animation-fill-mode:both;
 animation-fill-mode:both; 
 
 }
+
+/* Progress Bars */
 
 .barWeb, .barHTML, .barCSS, .barJavas, .barIllu, .barPhotos, .barIndes, .barCorel {
     font-size: 1.2em;
@@ -417,11 +315,6 @@ animation-fill-mode:both;
     animation-fill-mode:both; 
 }
 
-@keyframes progressBar {
-  0% { width: 0; }
-  100% { width: 100%; }
-}
-
 .htmlMeter { 
     height: 1.2em;
     width: 25em;
@@ -439,11 +332,6 @@ animation-fill-mode:both;
     background-color: #28A34D;
     animation: progressBar 3s ease-in-out;
     animation-fill-mode:both; 
-}
-
-@keyframes progressBar {
-  0% { width: 0; }
-  100% { width: 100%; }
 }
 
 .designMeter { 
@@ -465,11 +353,6 @@ animation-fill-mode:both;
     animation-fill-mode:both; 
 }
 
-@keyframes progressBar {
-  0% { width: 0; }
-  100% { width: 100%; }
-}
-
 .javaMeter { 
     height: 1.2em;
     width: 25em;
@@ -487,11 +370,6 @@ animation-fill-mode:both;
     background-color: #C94517;
     animation: progressBar 3s ease-in-out;
     animation-fill-mode:both; 
-}
-
-@keyframes progressBar {
-  0% { width: 0; }
-  100% { width: 100%; }
 }
 
 .aiMeter { 
@@ -513,11 +391,6 @@ animation-fill-mode:both;
     animation-fill-mode:both; 
 }
 
-@keyframes progressBar {
-  0% { width: 0; }
-  100% { width: 100%; }
-}
-
 .psMeter { 
     height: 1.2em;
     width: 25em;
@@ -535,11 +408,6 @@ animation-fill-mode:both;
     background-color: #ec1e0f;
     animation: progressBar 3s ease-in-out;
     animation-fill-mode:both; 
-}
-
-@keyframes progressBar {
-  0% { width: 0; }
-  100% { width: 100%; }
 }
 
 .idMeter { 
@@ -561,11 +429,6 @@ animation-fill-mode:both;
     animation-fill-mode:both; 
 }
 
-@keyframes progressBar {
-  0% { width: 0; }
-  100% { width: 100%; }
-}
-
 .corelMeter { 
     height: 1.2em;
     width: 25em;
@@ -585,10 +448,7 @@ animation-fill-mode:both;
     animation-fill-mode:both; 
 }
 
-@keyframes progressBar {
-  0% { width: 0; }
-  100% { width: 100%; }
-}
+
 
 .skillImage {
     display: none;
@@ -598,19 +458,10 @@ animation-fill-mode:both;
     animation: fadeInUp 1s ease-in-out;
     animation-fill-mode:both; 
 }
-
+/* Progress Bars END*/
 
 /* Experience Section */
 
-@keyframes fader { 
-    0% {
-      opacity: 0;
-    }
-  
-    100% {
-      opacity: 1;
-    }
-  }
 
 .skillContainer {
     display: grid;
@@ -629,33 +480,6 @@ animation-fill-mode:both;
     animation: fader 2s ease-in-out;
     animation-fill-mode:both; 
 }
-/*
-.experCards {
-    max-width: 1200px;
-    padding: 5%;
-    display: grid;
-    gap: 1rem;
-  }
-
-
-.experCard {
-    padding: 5%;
-    height: 4rem;
-  }
-
-
-
-.experMain {
-    height: 100%;
-}
-
-
-
-.experImage{
-    display: none;
-}
-
-*/
 
 .cellWrapper {
     display: flex;
@@ -739,29 +563,12 @@ animation-fill-mode:both;
     padding: 5% 3% 2% 5%;
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
-    content: ".";
-}
-
 .container-fluid {
     display: flex;
     
 
 }
 
-/*
-.breadcrumb {
-    display: flex;
-    flex-direction: column;
-
-}
-
-.breadcrumb-item {
-    display: flex;
-    justify-content: center;
-}
-
-*/
 
 .contactCard {
 
@@ -923,6 +730,45 @@ footer {
 }
 
 
+/*Animations*/
+
+@keyframes fader { 
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+@keyframes progressBar {
+    0% { width: 0; }
+    100% { width: 100%; }
+  }
+
+@keyframes fadeInUp{
+    0% { opacity: 0;
+  -webkit-transform: translate3d(0,15%,0);
+  transform: translate3d(0,15%,0); }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  }
+
+@keyframes fadeInRight{
+    0% { opacity: 0;
+  -webkit-transform: translate3d(5%,0,0);
+  transform: translate3d(5%,0,0); }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  }
+
 
 
 /*Tablet*/
@@ -931,33 +777,10 @@ footer {
 
     .skillCards { grid-template-columns: repeat(2, 1fr); }
 
-	.gal {
-	
-	
-        -webkit-column-count: 1; /* Chrome, Safari, Opera */
-        -moz-column-count: 1; /* Firefox */
-        column-count: 1;
-          
-        
-        }
-
-    .skillcard {
-        margin-right: 20%;
+    .cards { 
+        grid-template-columns: repeat(2, 1fr); 
+        padding-top: 5%;
     }
-
-    .experCards { grid-template-columns: repeat(3, 1fr); 
-        width: 100%;
-        margin: 0 auto;
-        padding: 5% 5% 5% 0%;
-  
-    }
-
-    .contactCards { 
-        gap: 1rem;
-        grid-template-columns: repeat(3, 1fr); 
-
-    }
-
 
     .mainHeader {
         background-image: url(../img/bannerMain.jpg);
@@ -972,11 +795,8 @@ footer {
     .heroBanner {
         margin-top: 40%;
     }
-    
-    .cards { 
-        grid-template-columns: repeat(2, 1fr); 
-        padding-top: 5%;
-    }
+
+    /*Services*/
 
     #services {
         padding-top: 5%;
@@ -988,66 +808,25 @@ footer {
         display: grid;
         padding: 0% 5% 0% 5%; 
     }
+
+    /*Portfolio*/
+	.gal {
+	
+	
+        -webkit-column-count: 1; /* Chrome, Safari, Opera */
+        -moz-column-count: 1; /* Firefox */
+        column-count: 1;
+          
+        
+        }
+
+        #portfolio {
+            padding-top: 5%;
     
-    .subService {
-
-        height: 35em;
+        }
     
-    }
+/*Skills*/
 
-    #portfolio {
-        padding-top: 5%;
-
-    }
-
-       
-#userID, #email, #subject {
-
-    width: 15em;
-    height: 50px;
-}
-
-#comment {
-    width: 46em;
-    height: 150px;
-}
-
-.contactCard {
-    grid-gap: 5px;
-    width: 20px;
-
-
-}
-.fname {
-        grid-column: col 0;
-        grid-row: row  1;
-      
-}
-
-.femail {
-    grid-column: col 0;
-    grid-row: row 1;
-  
-}
-
-.fsubject {
-    grid-column: col 0; /span 2;
-    grid-row: row  1;
-  
-}
-
-.fcomment {
-
-    grid-column: col 0/ span 2;
-    grid-row: row 2;
-}
-
-.submit {
-    padding-top: 10em;
-    grid-column: col 0s;
-    grid-row: row 3 ;
-  
-}
 
 .skillContainer{
     padding: 10% 2% 5% 5%;
@@ -1088,111 +867,79 @@ footer {
     padding-right: 2em;
 }
 
-
-
-/*
-
-.skillImage {
-    display: none;
-}
-
-
-.expercard {
-    margin: 0%;
-    padding-right: 20%;
-}
-
-
-
-.experMain {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    width: 50rem;
-    height: fit-content;
-    /*
-    grid-column: col 0 /span 1;
-    grid-row: row 0  ;
-    
-
-    
-    margin: 0%;
-}
-
-
-.experCell{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    width: 100%;
-    
-    grid-column: col 0 /span 1;
-    grid-row: row 1;
-    
-    padding-left: 40px;
-    margin: 0%
+    .skillcard {
+        margin-right: 20%;
     }
 
-.cellWrapper {
-    width: 20em;
+    .experCards { grid-template-columns: repeat(3, 1fr); 
+        width: 100%;
+        margin: 0 auto;
+        padding: 5% 5% 5% 0%;
+  
+    }
+
+/*Contact Form*/
+
+#userID, #email, #subject {
+
+    width: 15em;
+    height: 50px;
 }
 
-.experMail{
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    width: 30%;
-    /*
-    grid-column: col 0;
-    grid-row: row 1;
-    padding-right: 100%;
-    margin: 0%
+#comment {
+    width: 46em;
+    height: 150px;
+}
+
+.contactCards { 
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr); 
 
 }
 
-.cell {
-    width: fit-content;
-    padding: 0% 0% 0% 5%;
-    margin: 0%;
-    
+.contactCard {
+    grid-gap: 5px;
+    width: 20px;
+
+
 }
-
-
-.email{
-    width: fit-content;
-    padding: 0% 0% 0% 5%;
-    margin: 0%;
-}
-
-
-.cellContainer {
-    width: 100%;
-    margin: 0%;
-    padding: 0%;
-}
-
-.mailWrapper{
-    margin: 0%;
-    padding:0%;
-}
-
-.feedback {
-    padding: 0% 5% 0% 5%;
-}
-
-.Main_heading {
-    padding: 5% 0% 0% 0%;
-}
-
-
-*/
 
 .feedback {
     padding-top: 0%;
 }
+
+.fname {
+    grid-column: col 0;
+    grid-row: row  1;
+  
+}
+
+.femail {
+grid-column: col 0;
+grid-row: row 1;
+
+}
+
+.fsubject {
+grid-column: col 0/ span 2;
+grid-row: row  1;
+
+}
+
+.fcomment {
+
+grid-column: col 0/ span 2;
+grid-row: row 2;
+}
+
+.submit {
+padding-top: 10em;
+grid-column: col 0s;
+grid-row: row 3 ;
+
+}
+
+/*Footer*/
 .contentbox {
     width: 100%;
 
@@ -1276,9 +1023,23 @@ footer {
 
     .contactCards { grid-template-columns: repeat(3, 1fr); }
 
+/*Navigation*/
 
     .sm-icons .nav-item {
         padding-right: 1em;
+      }
+
+      .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 80px;
+    }
+/*banner*/
+      .animationtest {
+        font-weight: 200;
+        margin: 0.4em 0;
+        font-size: 2em;
       }
 
     .heroBanner {
@@ -1311,12 +1072,9 @@ footer {
         height: 60px;
     }
 
-    .navbar-nav {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        height: 80px;
-    }
+
+
+    /*Services*/
 
     #services {
         padding-top: 0%
@@ -1332,7 +1090,7 @@ footer {
         padding-top: 2%
     }
     
-
+    /*Anout ME*/
      .cards {
         max-width: 100%;
         padding: 0% 18% 0% 16%;
@@ -1343,6 +1101,8 @@ footer {
      .row{
         padding: 2% 18% 0% 19%;
      }
+
+     /*Skills*/
 
      #skills {
         max-width: 100%;
@@ -1462,59 +1222,14 @@ footer {
     }
 
 
-    
+    /*Client Feedback*/
 
-    /*
-    .experCell  {
-        grid-column: col 2 /span 2;
-        grid-row: row 2;
-        padding: 0%;
-        width: 20rem
-    }
-
-    .cell {
-        padding-left: 5%;
-    }
-
-    .Main_heading {
-        width
-        padding: 5% 0% 0% 0%;
-    }
-
-    .experMail  {
-        grid-column: col 1;
-        grid-row: row 2 /span 1;
-        padding-left: 5%;
-    }
-
-    .experImage {
-        display: block;
-        grid-column: col 0;
-        grid-row: row 1 /span 2;
-        
-
-    }
-
-    .experMain  {
-        width: 70%;
-        height: fit-content;
-        grid-column: col 1 /span 4;
-        grid-row: row 1;
-
-
-    }
-
-    .experCard {
-        width: 100%;
-        padding: 0%;
-      }
-    */
-    
       .feedback {
         margin: 0 auto;
         padding: 5% 20% 0% 19%;
       }
     
+      /*Contact Form*/
     .contact {
         padding: 0% 15% 0% 15%;
     }
@@ -1536,7 +1251,7 @@ footer {
         width: 71em;
         height: 150px;
     }
-
+/*Footer*/
     .boxcontain {
         justify-content: center;
         width: 70%;
@@ -1597,16 +1312,9 @@ footer {
 
 }
 
-.fname {
-    
-}
 
 
-.animationtest {
-    font-weight: 200;
-    margin: 0.4em 0;
-    font-size: 2em;
-  }
+
 
 
   .serviceContainer {
@@ -1646,6 +1354,7 @@ footer {
     padding: 0% 0% 1% 4%;
 
 }
+
 
 
 
